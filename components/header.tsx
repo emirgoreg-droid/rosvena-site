@@ -24,12 +24,16 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-1.5 h-6 bg-[#C6A47A] rounded-full" />
-            <span className="font-serif text-2xl md:text-3xl font-semibold text-foreground">
-              ROSVENA
-            </span>
-          </Link>
+<Link href="/" className="flex items-center gap-3 shrink-0">
+  <img
+    src="/rosvena-logo-512.png"
+    alt="ROSVENA Logo"
+    className="w-12 h-12 md:w-14 md:h-14 object-contain"
+  />
+  <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wide text-foreground">
+    ROSVENA
+  </span>
+</Link>
           
           {/* Search Bar - Desktop */}
           <div className="hidden md:flex flex-1 max-w-xl mx-8">
