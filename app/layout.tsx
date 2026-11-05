@@ -1,3 +1,21 @@
+
+import type { Metadata } from 'next'
+import { Playfair_Display, Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  variable: '--font-playfair',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-inter',
+})
+
 export const metadata: Metadata = {
   title: 'ROSVENA | Yaşam Alanını Kolaylaştır',
   description: 'ROSVENA, eviniz için pratik, estetik ve kullanışlı çözümler sunar.',
@@ -21,3 +39,4 @@ export default function RootLayout({
     </html>
   )
 }
+
