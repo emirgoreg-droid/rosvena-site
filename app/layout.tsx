@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   title: 'ROSVENA | Yaşam Alanını Kolaylaştır',
   description: 'ROSVENA, eviniz için pratik, estetik ve kullanışlı çözümler sunar.',
   icons: {
-    icon: '/rosvena-logo.png',
-apple: '/rosvena-logo.png',
+    icon: '/rosvena-logo-yeni.png',
+apple: '/rosvena-logo-yeni.png',
   },
 }
 
