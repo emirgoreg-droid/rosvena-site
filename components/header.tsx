@@ -51,20 +51,20 @@ export function Header() {
 
           {/* Icons */}
           <div className="flex items-center gap-2 md:gap-4">
-            <button className="p-2 hover:bg-card rounded-full transition-colors" aria-label="Hesabim">
+            <button className="p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300
               <User className="w-5 h-5 text-foreground" />
             </button>
-            <button className="p-2 hover:bg-card rounded-full transition-colors" aria-label="Favoriler">
+            <button className="p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300
               <Heart className="w-5 h-5 text-foreground" />
             </button>
-            <button className="p-2 hover:bg-card rounded-full transition-colors relative" aria-label="Sepet">
+            <button className="p-2 hover:bg-[#333333] rounded-full transition-colors relative hover:text-[#C6A47A] duration-300" aria-label="Sepet">  
               <ShoppingBag className="w-5 h-5 text-foreground" />
               <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#1A1A1A] text-white text-[10px] rounded-full flex items-center justify-center">
                 0
               </span>
             </button>
             <button 
-              className="md:hidden p-2 hover:bg-card rounded-full transition-colors"
+              className="md:hidden p-2 hover:bg-[#333333] rounded-full transition-colors" hover:text-[#C6A47A] duration-300  
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >
@@ -96,8 +96,8 @@ export function Header() {
               <li key={category}>
                 <Link 
                   href={index === 0 ? "/kategoriler" : `/kategoriler/${category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
-                  className="flex items-center gap-1 px-4 py-3 text-sm font-medium text-[#2B2B2B] hover:text-[#C6A47A] transition-colors"
-                >
+  className="relative flex items-center gap-1 px-4 py-3 text-sm font-medium text-[#2B2B2B] hover:text-[#B58B55] transition-all duration-300 after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[1px] after:scale-x-0 after:bg-[#B58B55] after:transition-transform after:duration-300 hover:after:scale-x-100"
+>
                   {category}
                   {index === 0 && <ChevronDown className="w-4 h-4" />}
                 </Link>
