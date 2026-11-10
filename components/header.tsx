@@ -51,29 +51,29 @@ export function Header() {
 
           {/* Icons */}
           <div className="flex items-center gap-2 md:gap-4">
-  <button
-    className="p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300"
-    aria-label="Hesabim"
-  >
-    <User className="w-5 h-5 text-foreground" />
-  </button>
+            <button
+              className="p-2 rounded-full text-[#C6A47A] hover:bg-[#333333] hover:text-white transition-colors duration-300"
+              aria-label="Hesabım"
+            >
+              <User className="w-5 h-5" />
+            </button>
 
-  <button
-    className="p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300"
-    aria-label="Favoriler"
-  >
-    <Heart className="w-5 h-5 text-foreground" />
-  </button>
+            <button
+              className="p-2 rounded-full text-[#C6A47A] hover:bg-[#333333] hover:text-white transition-colors duration-300"
+              aria-label="Favoriler"
+            >
+              <Heart className="w-5 h-5" />
+            </button>
 
-  <button
-    className="p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300 relative"
-    aria-label="Sepet"
-  >
-    <ShoppingBag className="w-5 h-5 text-foreground" />
-    <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#1A1A1A] text-white text-[10px] rounded-full flex items-center justify-center">
-      0
-    </span>
-  </button>
+            <button
+              className="p-2 rounded-full text-[#C6A47A] hover:bg-[#333333] hover:text-white transition-colors duration-300 relative"
+              aria-label="Sepet"
+            >
+              <ShoppingBag className="w-5 h-5" />
+              <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#C6A47A] text-[#1A1A1A] text-[10px] rounded-full flex items-center justify-center">
+                0
+              </span>
+            </button>
 
   <button
     className="md:hidden p-2 hover:bg-[#333333] hover:text-[#C6A47A] rounded-full transition-colors duration-300"
