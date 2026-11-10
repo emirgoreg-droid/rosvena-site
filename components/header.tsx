@@ -26,7 +26,7 @@ export function Header() {
           {/* Logo */}
 <Link href="/" className="flex items-center gap-3 shrink-0">
   <img
-    src="/rosvena-logo.png"
+    src="/rosvena-logo-yeni.png"
     alt="ROSVENA Logo"
     className="w-16 h-16 md:w-20 md:h-20 object-contain"
   />
@@ -89,14 +89,14 @@ export function Header() {
       </div>
 
       {/* Category Navigation - Desktop */}
-      <nav className="hidden md:block border-t border-border bg-card/50">
+      <nav className="hidden md:block border-t border-[#D8D1C7] bg-[#EAE7E2]">
         <div className="max-w-7xl mx-auto px-6">
           <ul className="flex items-center justify-center gap-1">
             {categories.map((category, index) => (
               <li key={category}>
                 <Link 
                   href={index === 0 ? "/kategoriler" : `/kategoriler/${category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
-                  className="flex items-center gap-1 px-4 py-3 text-sm text-foreground hover:text-[#C6A47A] transition-colors"
+                  className="flex items-center gap-1 px-4 py-3 text-sm font-medium text-[#2B2B2B] hover:text-[#C6A47A] transition-colors"
                 >
                   {category}
                   {index === 0 && <ChevronDown className="w-4 h-4" />}
