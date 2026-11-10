@@ -19,7 +19,7 @@ export function Header() {
   const [searchQuery, setSearchQuery] = useState("")
 
   return (
-    <header className="bg-background sticky top-0 z-50 border-b border-border">
+    <header className="bg-[#1A1A1A] text-white sticky top-0 z-50 border-b border-white/10">
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between gap-4">
@@ -28,9 +28,9 @@ export function Header() {
   <img
     src="/rosvena-logo.png"
     alt="ROSVENA Logo"
-    className="w-12 h-12 md:w-14 md:h-14 object-contain"
+    className="w-16 h-16 md:w-20 md:h-20 object-contain"
   />
-  <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wide text-foreground">
+  <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wide text-[#C6A47A]">
     ROSVENA
   </span>
 </Link>
