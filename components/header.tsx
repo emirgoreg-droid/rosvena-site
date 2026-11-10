@@ -31,7 +31,7 @@ export function Header() {
             <img
               src="/rosvena-logo-altin.png"
               alt="ROSVENA Logo"
-              className="w-14 h-14 md:w-[68px] md:h-[68px] object-contain"
+              className="w-16 h-16 md:w-[84px] md:h-[84px] object-contain"
             />
             <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#E8C58F] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
   ROSVENA
