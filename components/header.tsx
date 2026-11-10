@@ -33,7 +33,7 @@ export function Header() {
               alt="ROSVENA Logo"
               className="w-14 h-14 md:w-[68px] md:h-[68px] object-contain"
             />
-            <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#E8C58F] drop-shadow-[0_0_8px_rgba(232,197,143,0.28)]">
+            <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#E8C58F] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
   ROSVENA
 </span>
           </Link>
