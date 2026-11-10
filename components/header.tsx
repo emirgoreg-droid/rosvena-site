@@ -26,7 +26,7 @@ export function Header() {
           {/* Logo */}
 <Link href="/" className="flex items-center gap-3 shrink-0">
   <img
-    src="/rosvena-logo-512.png"
+    src="/rosvena-logo.png"
     alt="ROSVENA Logo"
     className="w-12 h-12 md:w-14 md:h-14 object-contain"
   />
