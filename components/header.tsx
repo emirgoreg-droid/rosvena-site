@@ -24,22 +24,22 @@ export function Header() {
 
       {/* Main Header */}
       <div className="max-w-[1440px] mx-auto px-5 md:px-8 py-2 md:py-2.5">
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex items-center justify-between gap-3 md:gap-4">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 md:gap-3.5 shrink-0">
-            <img
-              src="/rosvena-logo-altin.png"
-              alt="ROSVENA Logo"
-              className="w-[110px] h-[95px] md:w-[110px] md:h-[95px] object-contain"
-            />
-            <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#F0C477] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
-  ROSVENA
-</span>
-          </Link>
+          <Link href="/" className="flex items-center gap-2.5 md:gap-3 shrink-0">
+  <img
+    src="/rosvena-logo-altin.png"
+    alt="ROSVENA Logo"
+    className="w-[110px] h-[95px] md:w-[110px] md:h-[95px] object-contain"
+  />
+  <span className="font-serif text-[24px] md:text-[27px] font-medium tracking-[0.13em] text-[#F0C477] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
+    ROSVENA
+  </span>
+</Link>
 
           {/* Search Bar - Desktop */}
-          <div className="hidden md:flex flex-1 max-w-[520px] mx-auto px-5">
+          <div className="hidden md:flex flex-1 max-w-[480px] ml-auto mr-8 px-2">
             <div className="relative w-full">
               <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-[#8C7A63]" />
               <input
@@ -53,7 +53,7 @@ export function Header() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center gap-1.5 md:gap-2 shrink-0">
 
             <button
               className="p-2.5 rounded-full text-[#D6B27C] hover:bg-white/10 hover:text-[#E8C995] transition-all duration-300"
