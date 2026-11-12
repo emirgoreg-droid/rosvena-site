@@ -6,13 +6,13 @@ import { useState } from "react"
 import { Search, User, Heart, ShoppingBag, Menu, X, ChevronDown } from "lucide-react"
 
 const categories = [
-  "Tum Kategoriler",
+  "Tüm Kategoriler",
   "Banyo",
   "Mutfak",
-  "Duzenleyiciler",
-  "Ev & Yasam",
-  "Kisisel Bakim",
-  "Yeni Urunler"
+  "Düzenleyiciler",
+  "Ev & Yaşam",
+  "Kişisel Bakım",
+  "Yeni Ürünler"
 ]
 
 export function Header() {
@@ -23,7 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-[#1A1A1A] text-white border-b border-white/10">
 
       {/* Main Header */}
-      <div className="max-w-[1440px] mx-auto px-5 md:px-8 py-3 md:py-3.5">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-8 py-2 md:py-2.5">
         <div className="flex items-center justify-between gap-5">
 
           {/* Logo */}
@@ -33,7 +33,7 @@ export function Header() {
               alt="ROSVENA Logo"
               className="w-[110px] h-[95px] md:w-[110px] md:h-[95px] object-contain"
             />
-            <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#E8C58F] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
+            <span className="font-serif text-[25px] md:text-[30px] font-medium tracking-[0.16em] text-[#F0C477] drop-shadow-[0_0_5px_rgba(232,197,143,0.45)]">
   ROSVENA
 </span>
           </Link>
