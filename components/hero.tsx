@@ -1,39 +1,54 @@
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-10">
-      <div className="relative bg-card rounded-2xl md:rounded-3xl overflow-hidden">
-        <div className="grid md:grid-cols-2 items-center">
-          {/* Text Content */}
-          <div className="p-8 md:p-12 lg:p-16 order-2 md:order-1">
-            <p className="text-[#C6A47A] text-sm md:text-base font-medium tracking-wider mb-4">
-              PRATIK | ESTETIK | KALITELI
+    <section className="w-full py-0">
+      <div className="relative w-full h-[560px] md:h-[620px] lg:h-[min(680px,calc(100svh-200px))] min-h-[500px] overflow-hidden bg-[#171411]">
+
+        <Image
+          src="/images/hero-banner.jpg"
+          alt="ROSVENA yapışkanlı banyo düzenleyicileri"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[58%_center] md:object-[center_48%]"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+
+        <div className="relative z-10 flex h-full items-end md:items-center">
+          <div className="w-full max-w-2xl px-7 pb-12 md:px-12 md:py-16 lg:px-20">
+
+            <p className="text-[#E8C58F] text-xs md:text-sm font-semibold tracking-[0.3em] mb-5">
+              ROSVENA | EVİNİZDE YENİ BİR DÜZEN
             </p>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 text-balance leading-tight">
-              Yasam Alaninizi Guzellestiriyoruz.
+
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
+              Banyonuzda
+              <br />
+              Düzen ve Şıklık.
             </h1>
-            <p className="text-muted-foreground mb-8 max-w-md text-pretty leading-relaxed">
-              ROSVENA, eviniz icin pratik, estetik ve kullanisli cozumler sunar. Yasaminisin her kosesine dokunan urunlerimizle tanisin.
+
+            <p className="text-white/85 text-sm md:text-base lg:text-lg leading-relaxed max-w-lg mb-9">
+              Delme gerektirmeyen yapışkanlı çözümlerle
+              yaşam alanlarınızda pratikliği ve estetiği
+              bir araya getirin.
             </p>
-            <Button asChild size="lg" className="rounded-full px-10 py-6 text-sm bg-[#1A1A1A] hover:bg-[#0D0D0D] text-white transition-all duration-300 ease-out">
+
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full px-9 py-6 bg-[#E8C58F] hover:bg-[#D9B477] text-[#1A1A1A] font-semibold text-sm transition-all duration-300"
+            >
               <Link href="/urunler">
-                Alisverise Basla
+                Koleksiyonu Keşfet
+                <span className="ml-2">→</span>
               </Link>
             </Button>
-          </div>
-          
-          {/* Hero Image */}
-          <div className="relative h-64 md:h-full md:min-h-[400px] lg:min-h-[480px] order-1 md:order-2">
-            <Image
-              src="/images/hero-banner.jpg"
-              alt="ROSVENA premium ev urunleri"
-              fill
-              className="object-cover"
-              priority
-            />
+
           </div>
         </div>
       </div>

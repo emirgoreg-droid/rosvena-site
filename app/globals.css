@@ -115,12 +115,21 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
-
+  
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: #D3D2CE;
+    background-image:
+      linear-gradient(
+        rgba(190, 190, 188, 0.48),
+        rgba(190, 190, 188, 0.48)
+      ),
+      url("/rosvena-marble.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
