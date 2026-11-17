@@ -1,3 +1,4 @@
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -6,78 +7,90 @@
 :root {
   --background: #EAE7E2;
   --foreground: #1A1A1A;
+
   --card: #F5F3F0;
   --card-foreground: #1A1A1A;
+
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
-  --primary: #1A1A1A;
-  --primary-foreground: #FFFFFF;
-  --secondary: #F5F3F0;
-  --secondary-foreground: #1A1A1A;
+
+  --primary: #B58B55;
+  --primary-foreground: #211B14;
+
+  --secondary: #F1ECE4;
+  --secondary-foreground: #29251F;
+
   --muted: #F5F3F0;
-  --muted-foreground: #555555;
-  --accent: #EAE7E2;
-  --accent-foreground: #1A1A1A;
+  --muted-foreground: #666057;
+
+  --accent: #E8C58F;
+  --accent-foreground: #211B14;
+
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #FFFFFF;
+
   --border: #D4D0CB;
   --input: #D4D0CB;
-  --ring: #1A1A1A;
+  --ring: #B58B55;
+
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
+
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  --sidebar: #F5F3F0;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #B58B55;
+  --sidebar-primary-foreground: #211B14;
+  --sidebar-accent: #F1ECE4;
+  --sidebar-accent-foreground: #29251F;
+  --sidebar-border: #D4D0CB;
+  --sidebar-ring: #B58B55;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --background: #191919;
+  --foreground: #F5F3F0;
+  --card: #242424;
+  --card-foreground: #F5F3F0;
+  --popover: #242424;
+  --popover-foreground: #F5F3F0;
+  --primary: #D6B47A;
+  --primary-foreground: #211B14;
+  --secondary: #302C27;
+  --secondary-foreground: #F5F3F0;
+  --muted: #302C27;
+  --muted-foreground: #BDB5A9;
+  --accent: #D6B47A;
+  --accent-foreground: #211B14;
+  --destructive: oklch(0.637 0.237 25.331);
+  --destructive-foreground: #FFFFFF;
+  --border: #45413B;
+  --input: #45413B;
+  --ring: #D6B47A;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --sidebar: #242424;
+  --sidebar-foreground: #F5F3F0;
+  --sidebar-primary: #D6B47A;
+  --sidebar-primary-foreground: #211B14;
+  --sidebar-accent: #302C27;
+  --sidebar-accent-foreground: #F5F3F0;
+  --sidebar-border: #45413B;
+  --sidebar-ring: #D6B47A;
 }
 
 @theme inline {
   --font-sans: var(--font-inter), 'Inter', sans-serif;
   --font-serif: var(--font-playfair), 'Playfair Display', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -97,15 +110,18 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -115,12 +131,20 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
-  
+
+/* GENEL TEMEL AYARLAR */
+
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
+    color: var(--foreground);
     background-color: #D3D2CE;
     background-image:
       linear-gradient(
@@ -131,5 +155,93 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: var(--font-inter), 'Inter', sans-serif;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  a {
+    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #B58B55;
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: #D6B47A;
+    color: #211B14;
+  }
+}
+
+/* ROSVENA BUTON VE KART STİLLERİ */
+
+@layer components {
+  .rosvena-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid #B58B55;
+    border-radius: 9999px;
+    background: #E8C58F;
+    color: #211B14;
+    font-weight: 600;
+    transition: all 300ms ease;
+  }
+
+  .rosvena-button:hover {
+    background: #D6B47A;
+    border-color: #D6B47A;
+    box-shadow: 0 6px 18px rgba(181, 139, 85, 0.22);
+    transform: translateY(-2px);
+  }
+
+  .rosvena-card {
+    transition:
+      transform 300ms ease,
+      box-shadow 300ms ease,
+      border-color 300ms ease;
+  }
+
+  .rosvena-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(181, 139, 85, 0.55);
+    box-shadow: 0 12px 28px rgba(50, 40, 28, 0.10);
+  }
+}
+
+/* GÖRSEL VE KART GEÇİŞLERİ */
+
+@media (hover: hover) and (pointer: fine) {
+  .group:hover img {
+    transition: transform 600ms ease;
+  }
+}
+
+/* HAREKET AZALTMA TERCİHİ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
