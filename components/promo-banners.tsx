@@ -12,9 +12,10 @@ const banners = [
     href: "/urunler",
   },
   {
-    title: "Her Detayda\nDaha Fazla Düzen.",
+    title: "Her Detayda\nZahmetsiz Düzen.",
     subtitle: "ROSVENA | YAŞAM KOLEKSİYONU",
-    description: "Yaşam alanlarınıza sadelik ve işlevsellik katın.",
+    description:
+      "Mutfak ve yaşam alanlarınızda pratik çözümlerle ferahlık ve düzen sağlayın.",
     image: "/images/promo-kitchen.png",
     href: "/urunler",
   },
@@ -35,7 +36,7 @@ export function PromoBanners() {
               alt={banner.title.replace("\n", " ")}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
 
             <div className="absolute inset-0 bg-gradient-to-r from-[#171411]/85 via-[#171411]/55 to-transparent" />
